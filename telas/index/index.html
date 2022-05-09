@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Taran Technologies - Home</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="logo">
+                <h1><a href="index.html" class="linkMenu">Taran Technologies</a></h1>
+            </div>
+            <div class="menu">
+                <ul class="lista">
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Quem somos nós</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Nossa proposta</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#nossosProdutos" class="linkMenu">Nossos produtos</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Nossa história</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Galeria</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="entrar">
+                <input type="button" value="Entrar/Registrar" class="login">
+            </div>
+        </header>
+        <main>
+            <!--
+            <div class="compras">
+                <h3>Meu carrinho</h3>
+                <img src="imagens/Carrinho.svg" alt="Carrinho de compras" id="carrinho"> 
+            </div>
+             -->
+            <div class="apresentacao">
+                <div class="slogan">
+                    <h1>Taran Technologies</h1>
+                    <h3>Inovação é o nosso objetivo</h3>
+                </div>
+                <img src="../../imagens/fundoDispositivos.png" alt="nossos dispositivos">
+            </div>
+            <div class="produtos" id="nossosProdutos">
+                <h2>Nossos Produtos</h2>
+                <div class="itens">
+                    <div class="container">
+                        <a href="../celulares/celular.html"><img src="../../imagens/ModeloCelulares.png" alt="Celulares" class="produto"></a>
+                        <figcaption>Celulares</figcaption>
+                    </div>
+                    <div class="container">
+                        <a href="#" onclick="breve()"><img src="../../imagens/ModeloComputador.png" alt="Computadores" class="produto"></a>
+                        <figcaption>Computadores</figcaption>
+                    </div>
+                    <div class="container">
+                        <a href="#" onclick="breve()"><img src="../../imagens/ModeloFone.png" alt="Acessórios" class="produto"></a>
+                        <figcaption>Acessórios</figcaption>
+                    </div>
+                </div>
+            </div>
+            <div class="informacoes">
+                <div class="uteis" id="quemSomos">
+                    <h2>Quem somos nós</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente quas fuga, porro totam est veritatis velit illum repellat aliquam nemo provident. Dolores incidunt necessitatibus quod? Odio voluptates at saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente quas fuga, porro totam est veritatis velit illum repellat aliquam nemo provident. Dolores incidunt necessitatibus quod? Odio voluptates at saepe!</p>
+                </div>
+                <div class="uteis" id="nossaProposta">
+                    <h2>Nossa proposta</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente quas fuga, porro totam est veritatis velit illum repellat aliquam nemo provident. Dolores incidunt necessitatibus quod? Odio voluptates at saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente quas fuga, porro totam est veritatis velit illum repellat aliquam nemo provident. Dolores incidunt necessitatibus quod? Odio voluptates at saepe!</p>
+                </div>
+                <div class="uteis" id="nossaHistoria">
+                    <h2>Nossa história</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente quas fuga, porro totam est veritatis velit illum repellat aliquam nemo provident. Dolores incidunt necessitatibus quod? Odio voluptates at saepe! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente quas fuga, porro totam est veritatis velit illum repellat aliquam nemo provident. Dolores incidunt necessitatibus quod? Odio voluptates at saepe!</p>
+                </div>
+            </div>
+        </main>
+        <footer class="rodape">
+            <h4>Rc Coletto &copy; 2022</h4>
+            <h4><a href="www.objetivo.br">Colégio Objetivo</a></h4>
+            <!--<img src="imagens/Logo taran tecnologies.svg" alt="Logo" id="imgLogo">-->
+        </footer>
+    </body>
+    <script>
+        function breve(){
+            window.alert("Ops! Lamentamos, mas infelizmente esse linha de produtos ainda não foi lançada\nDesculpe o ocorrido...");
+        }
+    </script>
+</html>

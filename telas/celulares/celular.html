@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="celular.css">
+        <title>Compre celulares - Taran Technologies</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="logo">
+                <h1><a href="index.html" class="linkMenu">Taran Technologies</a></h1>
+            </div>
+            <div class="menu">
+                <ul class="lista">
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Quem somos nós</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Nossa proposta</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#nossosProdutos" class="linkMenu">Nossos produtos</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Nossa história</a></li>
+                    </div>
+                    <div class="linkMenuHover">
+                        <li class="opcoes"><a href="#" class="linkMenu">Galeria</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="entrar">
+                <input type="button" value="Entrar/Registrar" class="login">
+            </div>
+        </header>
+        <main>
+            <h2>Celulares</h2>
+            <div class="produtos">
+                <div class="produto" id="celularTaran" onmouseenter="criarPreco()" onmouseleave="deletarPreco()">
+                    <div class="imagem">
+                        <img src="../../imagens/CelularAnuncio.svg" alt="TaranCelular" class="imgProduto">
+                    </div>
+                    <div class="linha"></div>
+
+                    <div class="legenda">
+                        TaranPhone
+                    </div>
+                    <div class="linha"></div>
+                </div>
+            </div>
+            <div class="breve">
+                <h1>Mais produtos em breve...</h1>
+                <span>Aguarde!</span>
+            </div>
+        </main>
+    </body>
+    <script>
+        function criarPreco(){
+            var container = document.createElement("div"); //div total
+            container.classList.add("uteisInfo");
+
+            var botao = document.createElement("button"); //botão compre
+            botao.innerHTML = '<a href="../index/index.html">Ver produto</a>';
+            botao.classList.add("checar");
+
+            var preco = document.createElement("span"); //rotulo do preco
+            preco.innerText = '1900$';
+            preco.classList.add("valor");
+
+            container.setAttribute('id', 'compre'); //trocar id da div pai
+
+            document.getElementById("celularTaran").appendChild(container);
+
+            document.getElementById("compre").appendChild(botao);
+            document.getElementById("compre").appendChild(preco);
+        }
+
+        function deletarPreco(){
+            var containerRemover = document.getElementById("compre");
+            document.getElementById("celularTaran").removeChild(containerRemover);
+        }
+    </script>
+</html>
